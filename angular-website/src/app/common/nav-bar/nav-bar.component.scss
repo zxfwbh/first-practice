@@ -1,0 +1,57 @@
+.toolbar {
+    height: 60px;
+    margin: -8px;
+    display: flex;
+    align-items: center;
+    background-color: #1976d2;
+    color: white;
+  }
+
+.logoSpace {
+    align-items: center;
+    display: flex;
+}
+
+  .logoSpace img {
+    margin: 0 16px;
+  }
+
+  .navSpace {
+    width: 60%;
+    min-width: 600px;
+    margin: auto;
+  }
+  .navSpace ul {
+      margin: 0;
+      padding: 0;
+  }
+  .navSpace li {
+      display: inline-block;
+      width: 120px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      cursor: pointer;
+  }
+  .navSpace li.actived {
+    font-weight: 600;
+}
+  .navSpace li:hover {
+    opacity: 0.8;
+    background-color: white;
+    color: #1976d2;
+  }
+  .loginSpace span {
+      margin-right: 16px;
+      font-weight: 600;
+  }
+  .loginBtn {
+      width: 80px;
+      height: 32px;
+      line-height: 32px;
+      margin-right: 16px;
+      background-color: unset;
+      color: white;
+      border: none;
+      cursor: pointer;
+  }

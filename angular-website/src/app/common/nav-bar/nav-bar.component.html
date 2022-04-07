@@ -1,3 +1,17 @@
-<p>
-  nav-bar works!
-</p>
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <div class="logoSpace">
+    <img width="40" alt="Angular Logo" [src]="logoItem.logoSrc" />
+    <span>{{logoItem.logoTitle}}</span>
+  </div>
+  <div class="navSpace">
+    <ul>
+      <li *ngFor="let item of navItem" [ngClass]="{'actived': item.actived}" (click)="onNavClick(item)">{{item.label}}
+      </li>
+    </ul>
+  </div>
+  <div class="loginSpace">
+    <span *ngIf="loginItem">{{loginItem}}</span>
+    <button *ngIf="!loginItem" class="loginBtn" (click)="onLoginClick()">登录</button>
+  </div>
+</div>
