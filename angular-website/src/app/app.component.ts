@@ -17,6 +17,11 @@ export class AppComponent {
     routeLink: '/app',
     actived: true
   }, {
+    label: '组件',
+    value: 'component',
+    routeLink: '/component',
+    actived: false
+  }, {
     label: '设计',
     value: 'design',
     routeLink: '/design',
